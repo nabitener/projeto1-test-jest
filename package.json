@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch --coverage",
+    "test:debug": "ndb jest"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,15 @@
   },
   "homepage": "https://github.com/nabitener/projeto1-test-jest#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
     "@types/jest": "^27.4.1",
-    "jest": "^27.5.1"
+    "babel-jest": "^28.1.3",
+    "jest": "^27.5.1",
+    "ndb": "^1.1.5"
+  },
+  "dependencies": {
+    "dinero.js": "^1.9.1",
+    "lodash": "^4.17.21"
   }
 }
